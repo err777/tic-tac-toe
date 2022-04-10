@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: black;
+}
+
+body {
+  background-color: rgba(235, 235, 235, 0.842);
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.ttt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ttt__area {
+  width: 300px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 3px solid black;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  border-radius: 3%;
+  background-color: #f3f1f1;
+}
+
+.ttt__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 34px;
+  color: black;
+}
+
+.ttt__cell:hover {
+  background-color: rgba(201, 200, 200, 0.842);
+}
+/*# sourceMappingURL=style.css.map */
