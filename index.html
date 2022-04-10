@@ -9,15 +9,15 @@
   </head>
 
   <body>
-    <div class="dialog">
+    <div id="dialog" class="dialog">
       <div class="dialog__window">
         <div class="dialog__header">
-          <button class="dialog__close"></button>
+          <div class="dialog__close"></div>
         </div>
-        <div class="dialogContent"></div>
+        <div class="dialog__сontent"></div>
         <div class="dialog__footer">
-          <button class="dialog__btn dialog__btn--restart">Начать заного</button>
-          <button class="dialog__btn dialog__btn--donation">Donation</button>
+          <button id="btn-restart" class="dialog__btn dialog__btn--restart">Начать заного</button>
+          <button id="btn-donation" class="dialog__btn dialog__btn--donation">Donation</button>
         </div>
       </div>
 
@@ -36,9 +36,15 @@
             <div class="ttt__cell"></div>
             <div class="ttt__cell"></div>
         </div>
+       <form action="">
+        <input name="x" value="x" type="radio" id="start-x" class="dialog__btn dialog__btn--start-x">
+        <label for="x">Начинают крестики</label>
+        <input name="o" value="o" type="radio" id="start-o" class="dialog__btn dialog__btn--start-o">
+        <label for="o">Начинают нолики</label>
+       </form>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

@@ -9,12 +9,75 @@
 }
 
 body {
+  font-family: arial, serif;
   background-color: rgba(235, 235, 235, 0.842);
 }
 
 h1 {
   margin-top: 100px;
   margin-bottom: 30px;
+}
+
+.dialog {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog__window {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.dialog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.dialog__close {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  opacity: 0.3;
+}
+
+.dialog__close:hover {
+  opacity: 1;
+}
+
+.dialog__close:before, .dialog__close:after {
+  position: absolute;
+  left: 11px;
+  content: ' ';
+  height: 23px;
+  width: 2px;
+  background-color: #333;
+}
+
+.dialog__close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.dialog__close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .ttt {

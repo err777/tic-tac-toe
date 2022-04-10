@@ -7,6 +7,7 @@
 }
 
 body {
+  font-family: arial, serif;
   background-color: rgba(235, 235, 235, 0.842);
 }
 
@@ -16,8 +17,58 @@ h1 {
 }
 
 .dialog {
-  
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: .5);
+
+  &__window {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__close {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 1;
+    }
+    &:before, &:after {
+      position: absolute;
+      left: 11px;
+      content: ' ';
+      height: 23px;
+      width: 2px;
+      background-color: #333;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
 }
+
+
+
+
 
 .ttt {
   display: flex;
